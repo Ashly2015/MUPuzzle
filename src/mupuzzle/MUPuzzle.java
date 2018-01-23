@@ -68,6 +68,17 @@ public class MUPuzzle {
         
         return false;
     }
+    
+    public void buildStr(String strReq){
+        buildStr(strReq, "MI");
+    }
+    
+    private void buildStr(String strReq, String strActual){
+        if(strReq.compareTo(strActual)==0)
+            return;
+        
+        
+    }
 
     /**
      * @param args the command line arguments
