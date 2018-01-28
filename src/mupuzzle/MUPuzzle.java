@@ -94,7 +94,21 @@ public class MUPuzzle {
         return false;
     }
     
-    public boolean demuestraTeo(String teo, String axioma){
+    public boolean demuestraTeo(String teo){
+        
+        if(checaAbecedario(teo))
+            return demuestraTeo(teo, "MI");
+        System.out.println("SOLO palabras con M, I y/o U");
+        return false;
+        
+    }
+    
+    private boolean checaAbecedario(String teo) {
+        teo=teo.replace("M", "").replace("I", "").replace("U", "");
+        return teo.isEmpty();
+    }
+    
+    private boolean demuestraTeo(String teo, String axioma){
         
         if(axioma.compareTo(teo)==0){
             arrStr.add(axioma);
@@ -152,9 +166,10 @@ public class MUPuzzle {
 
         //Probrando el último método
         try{
-           mu.demuestraTeo("MUIIU", "MI");
-           System.out.println("Listo");
-           System.out.println(mu.getArrStr());
+           if(mu.demuestraTeo("MUIIU")){
+            System.out.println("Listo");
+            System.out.println(mu.getArrStr());
+           }
         }catch(StackOverflowError e){
             System.out.println("No se pudo encontrar solución");
         }
