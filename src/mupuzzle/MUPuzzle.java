@@ -40,7 +40,6 @@ public class MUPuzzle {
         return res;
     }
     
-    //Primera regla: Agrega U
     /**
      * 
      * @param axioma    La cadena de M, I o U a demostrar
