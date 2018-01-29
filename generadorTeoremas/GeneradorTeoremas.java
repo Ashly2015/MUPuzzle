@@ -210,7 +210,7 @@ public class GeneradorTeoremas{
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MUPuzzle mu=new MUPuzzle();
+        GeneradorTeoremas mu=new GeneradorTeoremas();
         Scanner scanner = new Scanner(System.in);
         int id = 40;
         int n = 40;
