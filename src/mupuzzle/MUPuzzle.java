@@ -138,8 +138,8 @@ public class MUPuzzle {
      */
     public boolean demuestraTeo(String teo){
         
-        this.arrStr=new ArrayList();
-        this.arrRules=new ArrayList();
+        this.arrStr=new ArrayList<String>();
+        this.arrRules=new ArrayList<Integer>();
         
         return demuestraTeo(teo, "MI");
         
