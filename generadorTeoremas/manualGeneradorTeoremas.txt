@@ -1,0 +1,8 @@
+Para correr el programa, situarse en esta carpeta y correr:
+ ~$ javac GeneradorTeoremas.java
+ ~$ java GeneradorTeoremas
+
+ El string de inicio solo debe tener los caracteres : M, I, U
+ sin espacios y sin comillas.
+
+ Para terminar el programa ctl-c.
